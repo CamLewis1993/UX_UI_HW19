@@ -1,0 +1,200 @@
+@font-face {
+  font-family: demode;
+  src: url(../demode/Demode.ttf);
+}
+@font-face {
+  font-family: Brygada1918;
+  src: url(../Brygada1918-Family/Brygada1918-Regular.otf);
+}
+@font-face {
+  font-family: caviardreams;
+  src: url(../caviar_dreams/CaviarDreams.ttf);
+}
+body {
+  margin: 0;
+  background-color: #F8E4D7;
+}
+h2 {
+  font-family: caviardreams;
+  font-weight: bold;
+}
+p {
+  font-family: Brygada1918-Regular;
+}
+h1 {
+  width: 100%;
+  flex-basis: 100%;
+  align-self: flex-start;
+  text-align: center;
+  font-family: caviardreams;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+header {
+  background-color: #F8E4D7;
+  padding: 15px;
+  font-family: demodenegative;
+  font-size: large;
+  height: 15vh;
+  display: flex;
+
+}
+header nav {
+  font-family: caviardreams;
+  color: black;
+  float: right;
+  vertical-align: top;
+  position: absolute; 
+  top: 50px; 
+  right: 30px;
+}
+nav a {
+  font-size: medium;
+  display: inline-block;
+  padding: 0px 5px;
+}
+.content {
+  font-family: Brygada1918;
+  max-width: 900px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 30px; 
+  background-color: #F8E4D7;
+  text-align: center;
+  top: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#mySkills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  
+}
+
+.skill-item {
+  border: maroon solid 5px;
+  width: 31%;
+  max-width: 600px;
+  height: 500px;
+  margin: 2% 1%;
+  padding: 2% 3%;
+}
+
+.skill-item > img { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.skill-item > h2,p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  #mySkills-container {
+    flex-direction: column;
+  }
+  .skill-item {
+    width: 90%;
+    padding: 2% 3% 1%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0%;
+    grid-template-areas:
+      "CASESTUDY1" 
+      "CASESTUDY2" 
+      "CASESTUDY3";
+    height: 50%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "CASESTUDY1 CASESTUDY2 CASESTUDY3";
+  height: 50%;
+}
+
+.CASESTUDY1 { 
+  grid-area: CASESTUDY1;
+  background-color: #6192C4;
+  padding: 5% 10%;
+  text-align: center;
+  max-width: 600px;
+  max-height: 450px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CASESTUDY2 { 
+  grid-area: CASESTUDY2; 
+  background-color: #BA9191;
+  padding: 5% 10%;
+  text-align: center;
+  max-width: 600px;
+  max-height: 450px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CASESTUDY3 { 
+  grid-area: CASESTUDY3; 
+  background-color: #CFE526;
+  padding: 5% 10%;
+  text-align: center;
+  max-width: 600px;
+  max-height: 450px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  background-color: #502A41;
+  width: 115px;
+  font: Brygada1918;
+  color: white;
+  padding: 0.85em 1em;
+  border-radius: 40%;
+  margin: auto;
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+}
+
+footer {
+  margin-top: 2%;
+  background-color: #F8E4D7;
+  padding: 5px;
+  bottom: 0;
+  height: 90px;
+  font-family: caviardreams;
+
+}
+footer div {
+  list-style: none;
+  padding-left: 5px;
+}
+footer a {
+  display: inline-block;
+  padding: 0px 7px;
+  
+}
